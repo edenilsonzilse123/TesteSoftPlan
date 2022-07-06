@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/07/06 18:09:40.481,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\ProvaDelphiApp.dproj=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\MDIAPP.dproj</Transaction>
+    <Transaction>2022/07/06 18:13:14.936,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/06 18:14:16.533,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uBase.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm</Transaction>
+    <Transaction>2022/07/06 18:14:16.533,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uBase.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/06 18:16:01.804,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/06 18:16:17.688,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa3.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm</Transaction>
+    <Transaction>2022/07/06 18:16:17.688,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa3.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/06 18:20:19.128,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\about.pas=</Transaction>
+    <Transaction>2022/07/06 18:20:22.806,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\CHILDWIN.PAS=</Transaction>
+  </Transactions>
+</BorlandProject>
