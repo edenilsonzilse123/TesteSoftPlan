@@ -1,0 +1,33 @@
+unit uTarefa1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uBase, Vcl.StdCtrls;
+
+type
+  TfrmTarefa01 = class(TfrmBase)
+    mmoTabelas: TMemo;
+    lblTabelas: TLabel;
+    mmoColunas: TMemo;
+    lblColunas: TLabel;
+    mmoCondicoes: TMemo;
+    lblCondicoes: TLabel;
+    mmoSqlGerado: TMemo;
+    lblSqlGerado: TLabel;
+    btnGeraSql: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTarefa01: TfrmTarefa01;
+
+implementation
+
+{$R *.dfm}
+
+end.

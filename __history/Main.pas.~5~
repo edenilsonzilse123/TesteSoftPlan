@@ -22,7 +22,6 @@ type
     procedure actTarefas03Execute(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure actTarefas02Execute(Sender: TObject);
-    procedure actTarefas01Execute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,14 +36,6 @@ implementation
 {$R *.dfm}
 
 uses uTarefa3, uTarefa2, uTarefa1;
-
-procedure TMainForm.actTarefas01Execute(Sender: TObject);
-begin
- if frmTarefa01 = nil then
-    Application.CreateForm(TfrmTarefa01,frmTarefa01);
-  frmTarefa01.SetarTitulo(actTarefas01.Caption);
-  frmTarefa01.show;
-end;
 
 procedure TMainForm.actTarefas02Execute(Sender: TObject);
 begin

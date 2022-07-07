@@ -59,7 +59,6 @@ object MainForm: TMainForm
     end
     object actTarefas01: TAction
       Caption = 'Tarefa 01'
-      OnExecute = actTarefas01Execute
     end
   end
 end

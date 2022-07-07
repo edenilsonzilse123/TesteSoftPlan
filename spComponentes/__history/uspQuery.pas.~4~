@@ -1,0 +1,45 @@
+unit uspQuery;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, Vcl.Dialogs;
+
+type
+  TspQuery = class(TFDQuery)
+  private
+    spTabelas:TStringList;
+    spColunas:TStringList;
+    spCondicoes:TStringList;
+  protected
+    { Protected declarations }
+  public
+    procedure GeraSql;
+  published
+    property pspTabelas:TStringList read spTabelas write spTabelas;
+    property pspColunas:TStringList read spColunas write spColunas;
+    property pspCondicoes:TStringList read spCondicoes write spCondicoes;
+  end;
+
+procedure Register;
+
+implementation
+
+procedure Register;
+begin
+  RegisterComponents('SoftPlanTesteEdenilson', [TspQuery]);
+end;
+
+{ TspQuery }
+
+procedure TspQuery.GeraSql;
+begin
+  if (spTabelas.Count > 1) then
+  begin
+    ShowMessage('Somente é permitido a seleção de uma tabela apenas');
+    Abort;
+  end;
+end;
+
+end.

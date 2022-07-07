@@ -1,0 +1,4 @@
+inherited frmTarefa01: TfrmTarefa01
+  Caption = 'frmTarefa01'
+  TextHeight = 15
+end

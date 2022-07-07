@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/07 17:52:48.000.100,=rtl.dcp</Transaction>
+    <Transaction>2022/07/07 17:53:03.000.356,=dbrtl.dcp</Transaction>
+    <Transaction>2022/07/07 17:53:03.000.493,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2022/07/07 17:53:03.000.697,=xmlrtl.dcp</Transaction>
+    <Transaction>2022/07/07 17:53:03.000.413,=FireDAC.dcp</Transaction>
+    <Transaction>2022/07/07 17:53:03.000.251,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\spComponentes\uspQuery.pas</Transaction>
+    <Transaction>2022/07/07 17:53:03.000.594,=FireDACCommon.dcp</Transaction>
+    <Transaction>2022/07/07 18:43:49.000.415,=vcl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>
