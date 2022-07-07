@@ -111,6 +111,12 @@
             <Form>frmTarefa03</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="forms\uTarefa2.pas">
+            <Form>frmTarefa02</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="threads\uThread01.pas"/>
+        <DCCReference Include="threads\uThread02.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -16,7 +16,6 @@ type
     actTarefas03: TAction;
     arefa031: TMenuItem;
     actTarefas02: TAction;
-    arefa021: TMenuItem;
     procedure actTarefas03Execute(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure actTarefas02Execute(Sender: TObject);

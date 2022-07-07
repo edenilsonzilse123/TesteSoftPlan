@@ -35,9 +35,6 @@ object MainForm: TMainForm
     object Tarefas: TMenuItem
       Caption = 'Tarefas'
       Hint = 'File related commands'
-      object arefa021: TMenuItem
-        Action = actTarefas02
-      end
       object arefa031: TMenuItem
         Action = actTarefas03
       end
@@ -49,10 +46,6 @@ object MainForm: TMainForm
     object actTarefas03: TAction
       Caption = 'Tarefa 03'
       OnExecute = actTarefas03Execute
-    end
-    object actTarefas02: TAction
-      Caption = 'Tarefa 02'
-      OnExecute = actTarefas02Execute
     end
   end
 end

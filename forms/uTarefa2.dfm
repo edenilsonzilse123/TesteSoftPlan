@@ -1,0 +1,87 @@
+inherited frmTarefa02: TfrmTarefa02
+  Caption = 'frmTarefa02'
+  ClientHeight = 200
+  ClientWidth = 553
+  ExplicitWidth = 569
+  ExplicitHeight = 239
+  TextHeight = 15
+  object lblProgressThread01: TLabel
+    Left = 8
+    Top = 103
+    Width = 120
+    Height = 15
+    Caption = 'Progresso da thread 01'
+  end
+  object lblProgressThread02: TLabel
+    Left = 8
+    Top = 151
+    Width = 120
+    Height = 15
+    Caption = 'Progresso da thread 02'
+  end
+  object grpTempoMillis: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 297
+    Height = 89
+    Caption = 'Tempo em milissegundos das threads'
+    TabOrder = 0
+    object lblThread01: TLabel
+      Left = 16
+      Top = 24
+      Width = 51
+      Height = 15
+      Caption = 'Thread 01'
+    end
+    object lblThread02: TLabel
+      Left = 16
+      Top = 54
+      Width = 51
+      Height = 15
+      Caption = 'Thread 02'
+    end
+    object seThread01: TSpinEdit
+      Left = 73
+      Top = 21
+      Width = 121
+      Height = 24
+      MaxValue = 5000
+      MinValue = 0
+      TabOrder = 0
+      Value = 0
+    end
+    object seThread02: TSpinEdit
+      Left = 73
+      Top = 51
+      Width = 121
+      Height = 24
+      MaxValue = 5000
+      MinValue = 0
+      TabOrder = 1
+      Value = 0
+    end
+    object btnRodarThreads: TButton
+      Left = 200
+      Top = 24
+      Width = 89
+      Height = 25
+      Caption = 'Rodar Threads'
+      TabOrder = 2
+      OnClick = btnRodarThreadsClick
+    end
+  end
+  object pbThread01: TProgressBar
+    Left = 8
+    Top = 124
+    Width = 537
+    Height = 17
+    TabOrder = 1
+  end
+  object pbThread02: TProgressBar
+    Left = 8
+    Top = 172
+    Width = 537
+    Height = 17
+    TabOrder = 2
+  end
+end

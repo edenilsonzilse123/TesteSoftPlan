@@ -1,14 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/07/06 18:09:40.481,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\ProvaDelphiApp.dproj=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\MDIAPP.dproj</Transaction>
-    <Transaction>2022/07/06 18:13:14.936,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
-    <Transaction>2022/07/06 18:14:16.533,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uBase.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm</Transaction>
-    <Transaction>2022/07/06 18:14:16.533,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uBase.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
-    <Transaction>2022/07/06 18:16:01.804,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
-    <Transaction>2022/07/06 18:16:17.688,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa3.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm</Transaction>
-    <Transaction>2022/07/06 18:16:17.688,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa3.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
-    <Transaction>2022/07/06 18:20:19.128,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\about.pas=</Transaction>
-    <Transaction>2022/07/06 18:20:22.806,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\CHILDWIN.PAS=</Transaction>
+	<Transactions>
+    <Transaction>2022/07/06 18:09:40.000.481,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\MDIAPP.dproj=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\ProvaDelphiApp.dproj</Transaction>
+    <Transaction>2022/07/06 18:13:14.000.936,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/06 18:14:16.000.533,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uBase.pas</Transaction>
+    <Transaction>2022/07/06 18:14:16.000.533,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uBase.dfm</Transaction>
+    <Transaction>2022/07/06 18:16:01.000.804,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/06 18:16:17.000.688,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa3.dfm</Transaction>
+    <Transaction>2022/07/06 18:16:17.000.688,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa3.pas</Transaction>
+    <Transaction>2022/07/06 18:20:19.000.128,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\about.pas=</Transaction>
+    <Transaction>2022/07/06 18:20:22.000.806,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\CHILDWIN.PAS=</Transaction>
+    <Transaction>2022/07/07 09:55:37.326,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 09:56:02.371,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa2.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 09:56:02.371,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa2.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm</Transaction>
+    <Transaction>2022/07/07 10:27:28.519,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa2.pas=</Transaction>
+    <Transaction>2022/07/07 10:27:58.437,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 10:28:21.510,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa2.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 10:28:21.510,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\forms\uTarefa2.dfm=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.dfm</Transaction>
+    <Transaction>2022/07/07 11:32:59.902,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 11:33:25.973,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\threads\uThread01.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 13:34:10.587,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\threads\uThread01.pas=</Transaction>
+    <Transaction>2022/07/07 13:36:36.091,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 13:36:56.448,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\threads\uThread01.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 14:27:40.515,=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 14:27:59.002,C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\threads\uThread02.pas=C:\Users\Edenilson\Documents\GitHub\TesteSoftPlan\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

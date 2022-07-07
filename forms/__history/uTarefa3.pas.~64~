@@ -21,6 +21,7 @@ type
 
     function  getTotalGrid:Real;
     function  getTotalDiv:Real;
+    procedure btnDivisoesClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,6 +36,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmTarefa03.btnDivisoesClick(Sender: TObject);
+begin
+  inherited;
+  edtTotalDivisoes.Text :=  FormatFloat('#.##',getTotalDiv);
+end;
 
 procedure TfrmTarefa03.btnTotalClick(Sender: TObject);
 begin
@@ -94,15 +101,16 @@ var
   x:Integer;
   vValorAnterior:Real;
 begin
-  Result  :=  0;
-  vValorAnterior  :=  1;
+  Result                :=  0;
+  vValorAnterior        :=  0;
   if vDataSetMostrar <> nil then
   begin
     vDataSetMostrar.First;
     while not vDataSetMostrar.Eof do
     begin
-      Result          :=  Result  + (vDataSetMostrar.FieldByName('Valor').AsCurrency/vValorAnterior);
-      vValorAnterior  :=  vDataSetMostrar.FieldByName('Valor').AsCurrency;
+      if vValorAnterior > 0 then
+        Result          :=  Result  + (vDataSetMostrar.FieldByName('Valor').AsCurrency/vValorAnterior);
+      vValorAnterior    :=  vDataSetMostrar.FieldByName('Valor').AsCurrency;
       vDataSetMostrar.Next;
     end;
   end;
