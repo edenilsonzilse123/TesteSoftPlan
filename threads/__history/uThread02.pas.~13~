@@ -58,16 +58,23 @@ implementation
 { TMinhaThread02 }
 
 procedure TMinhaThread02.Executar;
+  function IfThenTeste(pValor:Boolean):String;
+  begin
+    if pValor then
+      Result  :=  'S'
+    else
+      Result  :=  'N';
+  end;
 var
   x:Integer;
 begin
   vLabelThr02            :=  TLabel.Create(nil);
-  vLabelThr02.Parent     :=  vParenteThr02;
+  vLabelThr02.Parent     :=  vParente;
   vLabelThr02.Caption    :=  'Progresso thread 02';
   vLabelThr02.Top        :=  151;
   vLabelThr02.Width      :=  120;
   vProgressoThr02        :=  TProgressBar.Create(nil);
-  vProgressoThr02.Parent :=  vParenteThr02;
+  vProgressoThr02.Parent :=  vParente;
   vProgressoThr02.Top    :=  172;
   vProgressoThr02.Width  :=  537;
   vProgressoThr02.Left   :=  8;
@@ -77,6 +84,7 @@ begin
     vProgressoThr02.Position :=  x;
     Sleep(vTempoThr02);
   end;
+  ShowMessage(IfThenTeste(vProgressoThr02.Visible));
   FreeAndNil(vLabelThr02);
   FreeAndNil(vProgressoThr02);
 end;

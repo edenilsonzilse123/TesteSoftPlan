@@ -61,6 +61,10 @@ procedure TMinhaThread.Executar;
 var
   x:Integer;
 begin
+  if vLabel <> nil then
+    FreeAndNil(vLabel);
+  if vProgresso <> nil then
+    FreeAndNil(vProgresso);
   vLabel            :=  TLabel.Create(nil);
   vLabel.Parent     :=  vParente;
   vLabel.Caption    :=  'Progresso thread 01';
@@ -77,8 +81,6 @@ begin
     vProgresso.Position :=  x;
     Sleep(vTempo);
   end;
-  FreeAndNil(vLabel);
-  FreeAndNil(vProgresso);
 end;
 
 procedure TMinhaThread.Execute;

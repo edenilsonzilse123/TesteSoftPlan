@@ -58,6 +58,13 @@ implementation
 { TMinhaThread02 }
 
 procedure TMinhaThread02.Executar;
+  function IfThenTeste(pValor:Boolean):String;
+  begin
+    if pValor then
+      Result  :=  'S'
+    else
+      Result  :=  'N';
+  end;
 var
   x:Integer;
 begin
@@ -77,6 +84,7 @@ begin
     vProgressoThr02.Position :=  x;
     Sleep(vTempoThr02);
   end;
+  ShowMessage(IfThenTeste(vProgressoThr02.Visible));
   FreeAndNil(vLabelThr02);
   FreeAndNil(vProgressoThr02);
 end;

@@ -1,4 +1,4 @@
-unit uThread01;
+unit uThread02;
 
 interface
 
@@ -7,10 +7,10 @@ uses
   Vcl.Controls;
 
 type
-  TMinhaThread = class(TThread)
+  TMinhaThread02 = class(TThread)
   private
-    vTempo:Integer;
-    vProgresso:TProgressBar;
+    vTempoThr02:Integer;
+    vProgressoThr02:TProgressBar;
     vParente:TWinControl;
     vLabel:TLabel;
     { Private declarations }
@@ -18,8 +18,8 @@ type
     procedure Execute; override;
     procedure Executar;
   public
-    property pTempo:Integer read vTempo write vTempo;
-    property pParente:TWinControl read vParente write vParente;
+    property pTempoThr02:Integer read vTempoThr02 write vTempoThr02;
+    property pParenteThr02:TWinControl read vParente write vParente;
   end;
 
 implementation
@@ -32,7 +32,7 @@ implementation
 
   and UpdateCaption could look like,
 
-    procedure TMinhaThread.UpdateCaption;
+    procedure TMinhaThread02.UpdateCaption;
     begin
       Form1.Caption := 'Updated in a thread';
     end;
@@ -55,33 +55,35 @@ implementation
 
 }
 
-{ TMinhaThread }
+{ TMinhaThread02 }
 
-procedure TMinhaThread.Executar;
+procedure TMinhaThread02.Executar;
 var
   x:Integer;
 begin
+  if vLabel <> nil then
+    FreeAndNil(vLabel);
+  if vProgressoThr02 <> nil then
+    FreeAndNil(vProgressoThr02);
   vLabel            :=  TLabel.Create(nil);
   vLabel.Parent     :=  vParente;
-  vLabel.Caption    :=  'Progresso thread 01';
-  vLabel.Top        :=  103;
+  vLabel.Caption    :=  'Progresso thread 02';
+  vLabel.Top        :=  151;
   vLabel.Width      :=  120;
-  vProgresso        :=  TProgressBar.Create(nil);
-  vProgresso.Parent :=  vParente;
-  vProgresso.Top    :=  124;
-  vProgresso.Width  :=  537;
-  vProgresso.Left   :=  8;
+  vProgressoThr02        :=  TProgressBar.Create(nil);
+  vProgressoThr02.Parent :=  vParente;
+  vProgressoThr02.Top    :=  172;
+  vProgressoThr02.Width  :=  537;
+  vProgressoThr02.Left   :=  8;
   vLabel.Left       :=  8;
   for x := 0 to 100 do
   begin
-    vProgresso.Position :=  x;
-    Sleep(vTempo);
+    vProgressoThr02.Position :=  x;
+    Sleep(vTempoThr02);
   end;
-  FreeAndNil(vLabel);
-  FreeAndNil(vProgresso);
 end;
 
-procedure TMinhaThread.Execute;
+procedure TMinhaThread02.Execute;
 begin
   Executar;
 end;

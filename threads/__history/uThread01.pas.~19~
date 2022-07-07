@@ -3,23 +3,20 @@ unit uThread01;
 interface
 
 uses
-  System.Classes, Vcl.Dialogs, Vcl.StdCtrls, System.SysUtils, Vcl.Forms, Vcl.ComCtrls,
-  Vcl.Controls;
+  System.Classes, Vcl.Dialogs, Vcl.StdCtrls, System.SysUtils, Vcl.Forms, Vcl.ComCtrls;
 
 type
   TMinhaThread = class(TThread)
+  vTempo:Integer;
+  vProgresso:TProgressBar;
   private
-    vTempo:Integer;
-    vProgresso:TProgressBar;
-    vParente:TWinControl;
-    vLabel:TLabel;
     { Private declarations }
   protected
     procedure Execute; override;
     procedure Executar;
   public
     property pTempo:Integer read vTempo write vTempo;
-    property pParente:TWinControl read vParente write vParente;
+    property pProgresso:TProgressBar read vProgresso write vProgresso;
   end;
 
 implementation
@@ -61,24 +58,11 @@ procedure TMinhaThread.Executar;
 var
   x:Integer;
 begin
-  vLabel            :=  TLabel.Create(nil);
-  vLabel.Parent     :=  vParente;
-  vLabel.Caption    :=  'Progresso thread 01';
-  vLabel.Top        :=  103;
-  vLabel.Width      :=  120;
-  vProgresso        :=  TProgressBar.Create(nil);
-  vProgresso.Parent :=  vParente;
-  vProgresso.Top    :=  124;
-  vProgresso.Width  :=  537;
-  vProgresso.Left   :=  8;
-  vLabel.Left       :=  8;
   for x := 0 to 100 do
   begin
     vProgresso.Position :=  x;
     Sleep(vTempo);
   end;
-  FreeAndNil(vLabel);
-  FreeAndNil(vProgresso);
 end;
 
 procedure TMinhaThread.Execute;

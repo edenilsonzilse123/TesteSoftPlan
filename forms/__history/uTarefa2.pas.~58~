@@ -19,8 +19,8 @@ type
     procedure RodarThreads;
     procedure btnRodarThreadsClick(Sender: TObject);
     procedure TrocarTempo(pSpEdit:TSpinEdit);
-    procedure seThread02Exit(Sender: TObject);
-    procedure seThread01Exit(Sender: TObject);
+    procedure seThread01Change(Sender: TObject);
+    procedure seThread02Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,13 +66,13 @@ begin
   vThread02Exec.Resume;
 end;
 
-procedure TfrmTarefa02.seThread01Exit(Sender: TObject);
+procedure TfrmTarefa02.seThread01Change(Sender: TObject);
 begin
   inherited;
   TrocarTempo(seThread01);
 end;
 
-procedure TfrmTarefa02.seThread02Exit(Sender: TObject);
+procedure TfrmTarefa02.seThread02Change(Sender: TObject);
 begin
   inherited;
   TrocarTempo(seThread02);
@@ -83,7 +83,6 @@ begin
   if (StrToIntDef(pSpEdit.Text,0) <= 94) then
   begin
     ShowMessage('O tempo mínimo para cada thread é 95 milissegundos');
-    pSpEdit.Text  :=  '95';
     Abort;
   end;
 end;

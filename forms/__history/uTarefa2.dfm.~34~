@@ -32,10 +32,9 @@ inherited frmTarefa02: TfrmTarefa02
       Width = 121
       Height = 24
       MaxValue = 5000
-      MinValue = 95
+      MinValue = 0
       TabOrder = 0
-      Value = 95
-      OnExit = seThread01Exit
+      Value = 0
     end
     object seThread02: TSpinEdit
       Left = 73
@@ -43,14 +42,13 @@ inherited frmTarefa02: TfrmTarefa02
       Width = 121
       Height = 24
       MaxValue = 5000
-      MinValue = 95
+      MinValue = 0
       TabOrder = 1
-      Value = 95
-      OnExit = seThread02Exit
+      Value = 0
     end
     object btnRodarThreads: TButton
       Left = 200
-      Top = 20
+      Top = 24
       Width = 89
       Height = 25
       Caption = 'Rodar Threads'

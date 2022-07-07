@@ -83,7 +83,7 @@ begin
   if (StrToIntDef(pSpEdit.Text,0) <= 94) then
   begin
     ShowMessage('O tempo mínimo para cada thread é 95 milissegundos');
-    pSpEdit.Text  :=  '95';
+    pSpEdit.Text  :=  95;
     Abort;
   end;
 end;

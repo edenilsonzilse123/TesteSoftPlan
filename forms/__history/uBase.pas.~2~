@@ -25,7 +25,7 @@ implementation
 
 procedure TfrmBase.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  Action  :=  caFree;
+  Action  :=  TCloseAction.caFree;
 end;
 
 procedure TfrmBase.SetarTitulo(pTitulo: String);

@@ -35,7 +35,7 @@ inherited frmTarefa02: TfrmTarefa02
       MinValue = 95
       TabOrder = 0
       Value = 95
-      OnExit = seThread01Exit
+      OnChange = seThread01Change
     end
     object seThread02: TSpinEdit
       Left = 73
@@ -46,7 +46,7 @@ inherited frmTarefa02: TfrmTarefa02
       MinValue = 95
       TabOrder = 1
       Value = 95
-      OnExit = seThread02Exit
+      OnChange = seThread02Change
     end
     object btnRodarThreads: TButton
       Left = 200

@@ -1,4 +1,4 @@
-unit uThread01;
+unit uThread02;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Vcl.Controls;
 
 type
-  TMinhaThread = class(TThread)
+  TMinhaThread02 = class(TThread)
   private
     vTempo:Integer;
     vProgresso:TProgressBar;
@@ -32,7 +32,7 @@ implementation
 
   and UpdateCaption could look like,
 
-    procedure TMinhaThread.UpdateCaption;
+    procedure TMinhaThread02.UpdateCaption;
     begin
       Form1.Caption := 'Updated in a thread';
     end;
@@ -55,20 +55,24 @@ implementation
 
 }
 
-{ TMinhaThread }
+{ TMinhaThread02 }
 
-procedure TMinhaThread.Executar;
+procedure TMinhaThread02.Executar;
 var
   x:Integer;
 begin
+  if vLabel <> nil then
+    FreeAndNil(vLabel);
+  if vProgresso <> nil then
+    FreeAndNil(vProgresso);
   vLabel            :=  TLabel.Create(nil);
   vLabel.Parent     :=  vParente;
   vLabel.Caption    :=  'Progresso thread 01';
-  vLabel.Top        :=  103;
+  vLabel.Top        :=  151;
   vLabel.Width      :=  120;
   vProgresso        :=  TProgressBar.Create(nil);
   vProgresso.Parent :=  vParente;
-  vProgresso.Top    :=  124;
+  vProgresso.Top    :=  172;
   vProgresso.Width  :=  537;
   vProgresso.Left   :=  8;
   vLabel.Left       :=  8;
@@ -77,11 +81,9 @@ begin
     vProgresso.Position :=  x;
     Sleep(vTempo);
   end;
-  FreeAndNil(vLabel);
-  FreeAndNil(vProgresso);
 end;
 
-procedure TMinhaThread.Execute;
+procedure TMinhaThread02.Execute;
 begin
   Executar;
 end;
